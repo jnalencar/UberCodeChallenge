@@ -1,9 +1,12 @@
 package com.jnalencar.emailservice.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.jnalencar.emailservice.adapters.EmailSenderGateway;
 import com.jnalencar.emailservice.core.EmailSenderUseCase;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase{
 
     private final EmailSenderGateway emailSenderGateway;
